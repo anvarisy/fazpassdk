@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">fazpassdk</string>
+    <string name="fazpass_otp">FAZPASS OTP</string>
 </resources>

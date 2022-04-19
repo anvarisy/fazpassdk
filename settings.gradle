@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "fazpassdk"
 include ':app'
+include ':fazpassotp'
