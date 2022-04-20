@@ -1,12 +1,11 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
 }
 
 android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "tech.anvarisy.fazpassotp"
         minSdk 21
         targetSdk 32
         versionCode 1
