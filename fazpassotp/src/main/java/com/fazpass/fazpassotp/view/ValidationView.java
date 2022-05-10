@@ -1,6 +1,5 @@
 package com.fazpass.fazpassotp.view;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -9,7 +8,6 @@ import android.text.TextWatcher;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -47,7 +45,7 @@ public class ValidationView extends Fragment {
             digit.setId(index);
             digit.setInputType(InputType.TYPE_CLASS_NUMBER);
             digit.setFilters(new InputFilter[] { new InputFilter.LengthFilter(1) });
-            digit.setBackgroundResource(R.drawable.rectangle_border);
+            digit.setBackgroundResource(R.drawable.rectangle_grey_border);
             int finalIndex = index;
             digit.addTextChangedListener(new TextWatcher() {
                 @Override

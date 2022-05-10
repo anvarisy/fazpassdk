@@ -23,7 +23,7 @@ public class FazpassOtp extends AppCompatActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .setReorderingAllowed(true)
-                    .add(R.id.fragFazpassOtpRoot, ValidationView.class, null)
+                    .add(R.id.fragFazpassOtpRoot, MainView.class, null)
                     .commit();
         }
 //        setContentView(R.layout.activity_fazpass_otp);

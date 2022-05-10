@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal">
+        <TextView
+                android:text="@string/choose_your_verification_login_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textStyle="bold" android:textSize="16sp"
+                android:gravity="center_horizontal" android:layout_marginBottom="24dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="Email"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" android:id="@+id/btnMainEmail" android:textSize="14sp"
+                android:gravity="center"
+                android:background="@drawable/rectangle_purple_border"
+                android:layout_marginBottom="8dp" android:textColor="#8956E3"/>
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="SMS"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" android:id="@+id/btnMainSms"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" android:textSize="14sp" android:textColor="#8956E3"
+                android:background="@drawable/rectangle_purple_border"/>
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="WhatsApp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" android:id="@+id/btnMainWhatsapp" android:textSize="14sp"
+                android:gravity="center"
+                android:background="@drawable/rectangle_purple_border"
+                android:layout_marginBottom="8dp" android:textColor="#8956E3" />
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="Misscall"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" android:id="@+id/btnMainMisscall" android:textSize="14sp"
+                android:gravity="center"
+                android:background="@drawable/rectangle_purple_border"
+                android:layout_marginBottom="24dp" android:textColor="#8956E3"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+            <TextView
+                    android:text="@string/don_t_have_account_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="2dp"/>
+            <TextView
+                    android:text="@string/register"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content" android:id="@+id/tvMainRegister"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
